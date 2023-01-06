@@ -1,0 +1,8 @@
+.redondo{
+    width: 100px;
+    height: 100px;
+    background-image: url(/dist/images/panamericanLogo.png);
+    background-size: cover;
+    border-radius: 50%;
+    margin: 0 auto;
+}
