@@ -12,66 +12,137 @@
     
 </head>
 <body class="bg-body-tertiary">
-    <div class="container-fliuid p-0">
-        <!--usuario-->
-        <div class="row text-white m-0" style="background-color: #222">
-            <div class="col-8">
-                Bienvenido <b>User 1</b>
-            </div>
-            <div class="col text-right">
-                <small>Ultimo inicio de sesión: 09/01/2023 a 14:30</small>
-            </div>
-            <div class="col-1 text-right">
-                <a href="/dist/index.html" class="text-white">Cerrar Sesión</a>
-            </div>
+  <div class="container-fliuid p-0">
+    <!--usuario-->
+    <div class="row text-white m-0" style="background-color: #222">
+        <div class="col-8">
+            Bienvenido <b>User 1</b>
         </div>
-        <!--/usuario-->
-
-        <!--navbar-->
-        <nav class="navbar navbar-expand-lg bg-dark">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#">Pan American College</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="/dist/home.html">Inicio</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="/dist/matriculas.html">Matriculas</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="/dist/alumnos.html">Buscar Alumnos</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="/dist/profesores.html">Buscar Profesores
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Cursos</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="true">
-                      Opciones
-                    </a>
-                    <ul class="dropdown-menu">
-                      <a class="dropdown-item" href="#">Action</a>
-                      <a class="dropdown-item" href="#">Another action</a>
-                      <a class="dropdown-item" href="#">Something else here</a>
-                    </ul>
-                  </li>
-                </ul>
-              </div>
-            </div>
-        </nav>
-        <!--/navbar-->
-
-        <!--contenido-->
-        
-        <!--/contenido-->
+        <div class="col text-right">
+            <small>Ultimo inicio de sesión: 09/01/2023 a 14:30</small>
+        </div>
+        <div class="col-1 text-right">
+            <a href="/dist/index.html" class="text-white">Cerrar Sesión</a>
+        </div>
     </div>
+    <!--/usuario-->
+
+    <!--navbar-->
+    <nav class="navbar navbar-expand-lg bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Pan American College</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/dist/home.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/dist/matriculas.html">Matriculas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/dist/alumnos.html">Buscar Alumnos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/dist/profesores.html">Buscar Profesores
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Cursos</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="true">
+                Opciones
+              </a>
+              <ul class="dropdown-menu">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--/navbar-->
+
+    <!--contenido-->
+    <div class="row p-2">
+      <div class="row">
+        <div class="col">
+            <h3>Matriculas</h3>
+        </div>
+    </div>
+    <div class="col-12">
+      <div class="card m-2">
+        <div class="card-body">
+          <div class="row">
+            <div class="col-2">
+              <label for="nom_alumn">Nombres Alumno:</label>
+              <input type="text" id="nom_alumn" class="form-control" style="background-color: white;">
+            </div>
+            <div class="col-2">
+              <label for="ape_alumn">Apellidos Alumno:</label>
+              <input type="text" id="ape_alumn" class="form-control" style="background-color: white;">
+            </div>
+            <div class="col-2">
+              <label for="genero">Genero:</label>
+              <input type="text" id="genero" class="form-control" style="background-color: white;">
+            </div>
+            <div class="col-2">
+              <label for="rut">RUT:</label>
+              <input type="text" id="rut" class="form-control" style="background-color: white;">
+            </div>
+            <div class="form-group col-3">
+              <label for="imagenAlumn">Imagen del alumno:</label>
+              <input type="file" id="imagenAlumn" name="imagenAlumn" class="form-control-file">
+            </div>
+            <div class="col-2">
+              <label for="tipo_alumn">Tipo de alumno:</label>
+              <select name="tipo_alumn" id="tipo_alumn" class="form-control" style="background-color: white;">
+                <option value="1">prioritario</option>
+                <option value="2">tipo 2</option>
+                <option value="3">tipo 3</option>
+              </select>
+            </div>
+            <div class="col-2">
+              <label for="apo">Apoderado:</label>
+              <input type="text" id="apo" class="form-control" style="background-color: white;">
+            </div>
+            <div class="col-2">
+              <label for="tel_emg">Telefono de emergencia:</label>
+              <input type="text" id="tel_emg" class="form-control" style="background-color: white;">
+            </div>
+            <div class="col-2">
+              <label for="cursos">Cursos:</label>
+              <select name="cursos" id="cursos" class="form-control" style="background-color: white;">
+                <option value="1">4 Medio A</option>
+                <option value="2">4</option>
+                <option value="3">tipo 3</option>
+              </select>
+            </div>
+            <div class="btn-group d-flex m-2">
+              <button class="btn btn-outline-success">Matricular</button>
+              <button class="btn btn-outline-success">Limpiar</button>
+            </div>
+
+            <div class="label">
+              <label for="alergias">Alergias:</label>
+              <input type="text" id="alergias" class="form-control" style="background-color: white;">
+            </div>
+            <div class="label">
+              <label for="talleres">Talleres:</label>
+              <input type="select" id="talleres" class="from-control" style="background-color: white;">
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <!--/contenido-->
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
